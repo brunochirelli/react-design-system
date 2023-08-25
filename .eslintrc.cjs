@@ -4,6 +4,7 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:storybook/recommended",
   ],
@@ -15,5 +16,7 @@ module.exports = {
       "warn",
       { allowConstantExport: true },
     ],
+    "react/no-unknown-property": ["error", { ignore: ["css"] }],
+    "react/react-in-jsx-scope": "off",
   },
 };

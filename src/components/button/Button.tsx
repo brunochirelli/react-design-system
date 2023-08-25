@@ -1,7 +1,5 @@
-import "./button.css";
-
 const Button = () => {
-  return <div>Button</div>;
+  return <button>Button</button>;
 };
 
 export default Button;
